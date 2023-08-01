@@ -1,0 +1,23 @@
+.images{
+    object-fit: cover;
+    height: 300px;
+    width: 75%;
+    margin: 10px 0px;
+    border-radius: 30px;
+    transition: 1s;
+
+}
+
+.textt{
+    text-align: center;
+    border: solid 2px burlywood;
+    border-radius: 50px 10px;
+    transition: 1s;
+}
+.textt:hover{
+    background-color: darkgrey;
+}
+
+.gr{
+    color: rgb(75, 184, 75);
+}

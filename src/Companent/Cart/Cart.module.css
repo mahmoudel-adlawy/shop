@@ -1,0 +1,18 @@
+.cad{
+    border: solid 3px orange;
+    padding: 5px;
+    /* height: 500px; */
+    margin: 10px 0;
+}
+.hh{
+    color: brown;
+    
+}
+.gr{
+    color: rgb(9, 142, 22);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

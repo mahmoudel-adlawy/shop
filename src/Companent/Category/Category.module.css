@@ -1,0 +1,7 @@
+.images{
+width: 30%;
+height: 150px;
+border-radius: 30%;
+object-fit: cover;
+margin: auto;
+}
