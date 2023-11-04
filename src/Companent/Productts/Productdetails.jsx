@@ -14,9 +14,10 @@ export default function Productdetails() {
     async function addcartfun(id){
         const x = await addcart(id)
         console.log(x);
-        toast.success(x. message)
 
-        if(x==='success'){
+        if(x.status==='success'){
+         toast.success(x. message)
+
 
 
         }
