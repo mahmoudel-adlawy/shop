@@ -29,8 +29,8 @@ export default function Category() {
 
 <Slider {...settings}>
     {cat.length>0? cat.map((ele ,index)=><div className='my-3' key={index}>
-        <img className={sty.images} src={ele.image} alt="" />
-        <p className='text-center'> {ele.name}</p>
+        <img className={sty.images} src={ele?.image} alt="" />
+        <p className='text-center'> {ele?.name}</p>
     </div>):<Loading></Loading>}
     </Slider>
     
