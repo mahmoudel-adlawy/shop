@@ -42,16 +42,16 @@ export default function Cart() {
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
      
-        <h3>Number of cart items {det.numOfCartItems}</h3>
+        <h3>Number of cart items {det?.numOfCartItems}</h3>
 
         <div className='row '>
           {pro.length > 0 ? pro.map((ele, index) => <div key={index} className='col-md-3'>
             <div className={sty.cad}>
-              <img src={ele.product.imageCover} className='w-100' alt="" />
+              <img src={ele.product?.imageCover} className='w-100' alt="" />
               <hr className={sty.hh} />
               <div className={sty.box}>
 
-                <p>Rating ⏩ {ele.product.ratingsAverage} <i class="fas fa-star text-warning"></i></p>
+                <p>Rating ⏩ {ele.product?.ratingsAverage} <i class="fas fa-star text-warning"></i></p>
                 <p><i class="fas fa-trash-alt fa-2x text-danger" onClick={()=>{deleteefun(ele.product?._id)}}></i></p>
 
               </div>
