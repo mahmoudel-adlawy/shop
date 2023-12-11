@@ -37,16 +37,16 @@ export default function Productdetails() {
                {det? <div className={`row align-items-center my-5 vh-50 ${sty.boo}`}>
                    
                    <div className='col-md-4'>
-                       <img className={sty.ima} src={det.imageCover} alt="" />
+                       <img className={sty.ima} src={det?.imageCover} alt="" />
 
                    </div>
                    <div className='col-md-8'>
                        <p>  {det.category?.name}</p>
 
 
-                       <p className=''>  {det.description}</p>
-                       <p className=''>price ⏩  {det.price}</p>
-                       <p className=''>Rating ⏩  {det.ratingsAverage}</p>
+                       <p className=''>  {det?.description}</p>
+                       <p className=''>price ⏩  {det?.price}</p>
+                       <p className=''>Rating ⏩  {det?.ratingsAverage}</p>
                        <button className='btn btn-success form-control p-3 mt-2' onClick={()=>{addcartfun(det.id)}} >Add+</button>
 
 
