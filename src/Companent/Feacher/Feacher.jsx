@@ -25,7 +25,7 @@ export default function Feacher() {
            <Link to={`product/${ele.id}`}>
             
         <div className={sty.textt}>
-        <img className={sty.images} src={ele.imageCover} alt="" />
+        <img className={sty.images} src={ele?.imageCover} alt="" />
         <h4 className={sty.gr}>{ele.category?.name}</h4>
         {/* <h5>{ele.brand.name}</h5> */}
         <p>{ele.title.split(" ").slice(0,2).join(" ")}</p>
