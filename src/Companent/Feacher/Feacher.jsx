@@ -19,7 +19,7 @@ export default function Feacher() {
   },[])
   return (
     <>
-      <div className='container'>
+{/*       <div className='container'>
       <div className='row'>
         {pro.length? pro.map((ele,index)=><div key={index} className='col-md-2 my-4'>
            <Link to={`product/${ele.id}`}>
@@ -38,7 +38,7 @@ export default function Feacher() {
 
       </div>
       </div>
-
+ */}
     </>
   )
 }
