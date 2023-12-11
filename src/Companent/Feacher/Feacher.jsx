@@ -19,7 +19,7 @@ export default function Feacher() {
   },[])
   return (
     <>
-       <div className='container'>
+      <div className='container'>
       <div className='row'>
         {pro.length? pro.map((ele,index)=><div key={index} className='col-md-2 my-4'>
            <Link to={`product/${ele.id}`}>
@@ -27,6 +27,7 @@ export default function Feacher() {
         <div className={sty.textt}>
         <img className={sty.images} src={ele.imageCover} alt="" />
         <h4 className={sty.gr}>{ele.category?.name}</h4>
+        {/* <h5>{ele.brand.name}</h5> */}
         <p>{ele.title.split(" ").slice(0,2).join(" ")}</p>
         <p>Price ➡️ {ele.price}</p>
         <p>Rate ➡️ {ele?.ratingsAverage} <i className="fas fa-star text-warning "></i></p>
@@ -38,7 +39,7 @@ export default function Feacher() {
 
       </div>
       </div>
- 
+
     </>
   )
 }
