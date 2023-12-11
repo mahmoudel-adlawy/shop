@@ -23,7 +23,7 @@ export default function Product() {
   return (
     <>
 
-       <div className='container'>
+      <div className='container'>
       <Helmet>
                 <title>Product</title>
             </Helmet>
@@ -32,10 +32,11 @@ export default function Product() {
             <Link to={`${ele._id}`}>
 
               <div className={sty.textt}>
-                <img className={sty.images} src={ele.imageCover} alt="" />
+                <img className={sty.images} src={ele?.imageCover} alt="" />
                 <h4 className={sty.gr}>{ele.category?.name}</h4>
+                {/* <h5>{ele.brand?.name}</h5> */}
                 <p>{ele.title.split(" ").slice(0, 2).join(" ")}</p>
-                <p>Price ➡️ {ele.price}</p>
+                <p>Price ➡️ {ele?.price}</p>
                 <p>Rate ➡️ {ele?.ratingsAverage} <i className="fas fa-star text-warning "></i></p>
               </div>
             </Link>
@@ -44,7 +45,7 @@ export default function Product() {
           </div>) : <Loading></Loading>}
 
         </div>
-      </div> 
+      </div>
 
 
     </>
