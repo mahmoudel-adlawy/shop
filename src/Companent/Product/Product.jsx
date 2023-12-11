@@ -23,7 +23,7 @@ export default function Product() {
   return (
     <>
 
-{/*       <div className='container'>
+       <div className='container'>
       <Helmet>
                 <title>Product</title>
             </Helmet>
@@ -44,7 +44,7 @@ export default function Product() {
           </div>) : <Loading></Loading>}
 
         </div>
-      </div> */}
+      </div> 
 
 
     </>
